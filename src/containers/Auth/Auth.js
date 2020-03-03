@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import classes from './Auth.css'
 import Button from '../../components/UI/Button/Button'
+import Input from '../../components/UI/Input/Input'
 
 export default class Auth extends Component {
 
@@ -25,8 +26,8 @@ export default class Auth extends Component {
             onSabmit={this.submitHandler}
             className={classes.authForm}
           >
-            <input type="text" />
-            <input type="text" />
+            <Input label="Email" />
+            <Input label="Пароль" />
             <Button
               type="success"
               onClick={this.loginHandler}
