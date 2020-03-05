@@ -1,10 +1,48 @@
 import React, {Component} from 'react'
+import classes from './QuizCreator.css'
+import Button from '../../components/UI/Button/Button'
 
 export default class QuizCreator extends Component {
+
+  submitHandler = event => {
+    event.preventDefault()
+  }
+
+  addQuestionHandler = () => {
+
+  }
+
+  createQuizHandler = () => {
+
+  }
+
   render() {
     return (
-      <div>
-        <h2>Quiz Creator</h2>
+      <div className={classes.quizCreator}>
+        <div>
+          <h2>Создание теста</h2>
+          <form onSubmit={this.submitHandler}>
+            <input type="text" />
+            <hr />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <select></select>
+            <Button
+              type="primary"
+              onClick={this.addQuestionHandler}
+            >
+              Добавить вопрос
+            </Button>
+            <Button
+              type="success"
+              onClick={this.createQuizHandler}
+            >
+              Создать тест
+            </Button>
+          </form>
+        </div>
       </div>
     )
   }
