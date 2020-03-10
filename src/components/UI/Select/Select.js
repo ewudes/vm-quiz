@@ -12,11 +12,11 @@ const Select = props => {
         value={props.value}
         onChange={props.onChange}
       >
-        { props.option.map((option, index) => {
+        { props.options.map((option, index) => {
           return (
             <option
               value={option.value}
-              key={option.value  + index}
+              key={option.value + index}
             >
               {option.text}
             </option>
