@@ -7,7 +7,7 @@
     "test": "npm run eslint"
   },
   "dependencies": {
-    "axios": "^0.21.2",
+    "axios": "^1.6.0",
     "babel-eslint": "10.0.3",
     "babel-jest": "^25.2.1",
     "babel-loader": "8.3.0",
